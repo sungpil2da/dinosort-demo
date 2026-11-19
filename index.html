@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DINOSort · Live demo</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; background: #0f1115; color: #f3f4f6; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; }
+  main { max-width: 960px; margin: 0 auto; padding: 20px 16px 32px; }
+  .tag { font-size: 13px; letter-spacing: 0.08em; color: #93b4e6; font-weight: 700; }
+  h1 { margin: 6px 0 4px; font-size: 26px; line-height: 1.2; }
+  p { margin: 0 0 16px; color: #c7cbd3; font-size: 15px; line-height: 1.5; }
+  video { width: 100%; height: auto; display: block; background: #000; border-radius: 6px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 14px; font-size: 14px; }
+  .legend b { font-weight: 700; }
+  a { color: #93b4e6; }
+</style>
+</head>
+<body>
+<main>
+  <div class="tag">CAPSTONE DESIGN I · MSDE 320 · TEAM 8</div>
+  <h1>DINOSort — live demo</h1>
+  <p>Register a few good samples → inspect → sort. The inspection model DINOSure decides, and the sorter sends each part to its exit.</p>
+  <video src="demo.mp4" poster="poster.jpg" controls playsinline muted autoplay loop preload="metadata"></video>
+  <div class="legend">
+    <span><b style="color:#6fbf73">OK</b> → next process 180°</span>
+    <span><b style="color:#ef6b6b">Defect</b> → reject bin 90°</span>
+    <span><b style="color:#f2c14e">Unregistered</b> → check bin 270°</span>
+  </div>
+  <p style="margin-top:14px"><a href="demo.mp4" download>Download the video (MP4)</a></p>
+</main>
+</body>
+</html>
